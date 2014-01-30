@@ -2,5 +2,10 @@
 
 <% @articles.each do |article| %>
 	<h2><%= article.title %></h2>
-	<p><%= article.body %></p>
+	<p>
+		<%= article.body %><br><br>
+
+		This article by: <%= article.user_id %>
+	</p>
+
 <% end %>

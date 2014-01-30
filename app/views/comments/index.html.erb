@@ -1,4 +1,5 @@
 <% @comments.each do |comment| %>
-	<%= comment.body %><br>
-	<%= comment.article_id %><br>
+	<p>
+		<%= comment.body %><br><%= comment.article_id %>
+	</p>
 <% end %>
